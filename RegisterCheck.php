@@ -47,7 +47,7 @@
 
         echo "<center><br><h2>REGISTERED NEW USER</h2> <br> <br>
 
-        <a href='Login.html' class='button'> LOG-IN </a>  </center>";
+        <a href='Login.html' class='button'> LOG-IN </a> </center>";
     }
 
     mysqli_close($sqlConnect);

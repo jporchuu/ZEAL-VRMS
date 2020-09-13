@@ -18,7 +18,7 @@ $access = $_SESSION['access'];
 echo "<center>
     <br><h2>MAIN MENU</h2><br>
 
-    <a href='VehicleList.html' class='button'>View Vehicles List</a> <br> <br>
+    <a href='VehicleList.php' class='button'>View Vehicles List</a> <br> <br>
 
     <a href='RentVehicle.html' class='button'>Rent Vehicle</a> <br> <br>
 

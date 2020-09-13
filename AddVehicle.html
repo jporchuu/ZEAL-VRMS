@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Vehicle</title>
+</head>
+<body><center>
+
+    <br><h2>Add New Vehicle to the Database</h2><br>
+    <form action = "AddVehicle.php" method = "post">
+
+        Vehicle Name:<br> <input type = "text" name = "vName"> <br> <br>
+
+        Rent Cost Per Day:<br> <input type = "text" name = "costPerDay"> <br> <br>
+
+        Vehicle Type:<br>
+        <input type="radio" id="car" name="vehicle" value="Car" checked="checked">
+        <label for="car">Passenger Car</label><br>
+        <input type="radio" id="vansuv" name="vehicle" value="VanSUV">
+        <label for="vansuv">SUV / Van</label><br>
+        <input type="radio" id="motorC" name="vehicle" value="Motorcycle">
+        <label for="motorC">Motorcycle</label> <br> <br> <br>
+
+        <input type = "submit" value = "Add New Vehicle">  <br> <br>
+
+    </form>
+
+    <a href="Menu.php" class="button"><b>B A C K</b></a>
+
+</center></body>
+</html>
