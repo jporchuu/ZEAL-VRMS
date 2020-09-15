@@ -1,8 +1,3 @@
-<html>
-<head>
-    <title>Vehicle Added!</title>
-</head>
-<body>
 <?php
     // Verify mySQL
     $sqlConnect = mysqli_connect("localhost","root","");
@@ -25,6 +20,10 @@
         if (empty($_POST["costPerDay"])) echo "<h3>- 'Cost Per Day' Field Empty.</h3>";
 
         if (empty($_POST["vehicle"])) echo "<h3>- 'Vehicle Type' Field Empty.</h3>";
+
+        echo "
+        <a href='AddVehicle.html' class='button'> B A C K </a> </center>";
+
     }
 
     else{
@@ -44,14 +43,12 @@
         }
         mysqli_query($sqlConnect, $newData);
 
-        echo "<center><br><h2>REGISTERED NEW USER</h2> <br> <br>
+        echo "<center><br><h2>REGISTERED NEW VEHICLE</h2> <br> <br>
 
         <a href='VehicleList.php' class='button'> View Database </a> <br> <br>
-        <a href='Menu.html' class='button'> B A C K </a> </center>";
+        <a href='Menu.php' class='button'> B A C K </a> </center>";
 
     }
     echo "</center>";
     mysqli_close($sqlConnect);
 ?>
-</body>
-</html>

@@ -34,7 +34,7 @@
     while($row = mysqli_fetch_array($result_out)){
 
         $availability = "TRUE";
-        if ($row['Availability'] == 0) $availability == "FALSE";
+        if ($row['Availability'] == '0') $availability = "FALSE";
 
         echo "<tr>";
         echo "<td>" . $row['CarID'] . "</td>";
@@ -65,7 +65,7 @@
     while($row = mysqli_fetch_array($result_out)){
 
         $availability = "TRUE";
-        if ($row['Availability'] == 0) $availability == "FALSE";
+        if ($row['Availability'] == 0) $availability = "FALSE";
 
         echo "<tr>";
         echo "<td>" . $row['vanSUVID'] . "</td>";
@@ -96,10 +96,10 @@
     while($row = mysqli_fetch_array($result_out)){
 
         $availability = "TRUE";
-        if ($row['Availability'] == 0) $availability == "FALSE";
+        if ($row['Availability'] == 0) $availability = "FALSE";
 
         echo "<tr>";
-        echo "<td>" . $row['otorCID'] . "</td>";
+        echo "<td>" . $row['motorCID'] . "</td>";
         echo "<td>" . $row['VehicleName'] . "</td>";
         echo "<td>" . $row['costPerDay'] . "</td>";
         echo "<td>" . $availability . "</td>";

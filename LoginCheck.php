@@ -23,8 +23,6 @@
 
         if ($_POST["username"] == $Username && $_POST["password"] == $Password){
             $_SESSION['access'] = $credentials["Access"];
-            //
-            echo $credentials["Access"];
             $dataMatch = true;
         }
     }

@@ -20,7 +20,7 @@ echo "<center>
 
     <a href='VehicleList.php' class='button'>View Vehicles List</a> <br> <br>
 
-    <a href='RentVehicle.html' class='button'>Rent Vehicle</a> <br> <br>
+    <a href='RentVehicle.php' class='button'>Rent Vehicle</a> <br> <br>
 
     <a href='ReturnVehicle.html' class='button'>Return Vehicle</a> <br> <br>";
 
