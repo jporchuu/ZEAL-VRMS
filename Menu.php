@@ -29,7 +29,7 @@ if ($access == 'Admin'){
     echo "
     <a href='AddVehicle.html' class='button'>Add Vehicle </a> <br> <br>
 
-    <a href='DeleteVehicle.html' class='button'>Delete Vehicle</a> <br> <br>
+    <a href='DeleteVehicle.php' class='button'>Delete Vehicle</a> <br> <br>
 
     <a href='EditVehicle.html' class='button'>Edit Vehicle</a> <br> <br>";
 }

@@ -52,7 +52,7 @@ echo"
 </script>
 
 <center>
-    <h3>Select Vehicle:</label></h3><br/>
+    <h3>Select Vehicle to Rent:</label></h3><br/>
     <form action = 'RentConfirm.php' method = 'post'>
 
     <input type='radio' name='vehicleType' id='v1' value='car' onclick='Checkradiobutton()'/>Passenger Car<br/>";
