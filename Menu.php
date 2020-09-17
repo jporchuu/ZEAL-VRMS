@@ -22,7 +22,7 @@ echo "<center>
 
     <a href='RentVehicle.php' class='button'>Rent Vehicle</a> <br> <br>
 
-    <a href='ReturnVehicle.html' class='button'>Return Vehicle</a> <br> <br>";
+    <a href='ReturnVehicle.php' class='button'>Return Vehicle</a> <br> <br>";
 
 if ($access == 'Admin'){
 

@@ -1,3 +1,9 @@
+<html>
+<head>
+    <title>Vehicle Rented</title>
+</head>
+<body>
+<center>
 <?php
 // Verify mySQL
 $sqlConnect = mysqli_connect("localhost","root","");
@@ -13,12 +19,12 @@ if(!$selectDB) {
 }
 
 if(empty($_POST["vehicleType"])){
-    echo "<center><h2>Input Error</h2> <br>";
+    echo "<h2>Input Error</h2> <br>";
 
     if (empty($_POST["vehicleType"])) echo "<h3>You did not choose a vehicle to rent.</h3>";
 
     echo "
-        <a href='RentVehicle.php' class='button'> B A C K </a> </center>";
+        <a href='RentVehicle.php' class='button'> B A C K </a>";
 
 }
 
@@ -32,12 +38,14 @@ else{
 
     mysqli_query($sqlConnect, $rent);
 
-    echo "<center><br><h2>SUCCESSFULLY RENTED VEHICLE</h2> <br> <br>
+    echo "<br><h2>VEHICLE SUCCESSFULLY RENTED</h2> <br> <br>
 
         <a href='VehicleList.php' class='button'> View Database </a> <br> <br>
-        <a href='Menu.php' class='button'> B A C K </a> </center>";
+        <a href='Menu.php' class='button'> B A C K </a> ";
 
 }
-echo "</center>";
 mysqli_close($sqlConnect);
 ?>
+</center>
+</body>
+</html>
