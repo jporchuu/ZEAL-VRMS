@@ -11,11 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da1526da-3945-43ce-8610-8f2b590cb719" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ReturnConfirm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReturnVehicle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EditVehicle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EditVehicleConfirm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EditVehicleFields.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EditVehicleReconfirm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeleteVehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteVehicle.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RentConfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/RentConfirm.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1hSCgoS5ItDRrLIJL7vpEqY2yq8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -77,7 +80,7 @@
       <workItem from="1600070430046" duration="859000" />
       <workItem from="1600162638690" duration="5692000" />
       <workItem from="1600177259496" duration="11485000" />
-      <workItem from="1600352785006" duration="13393000" />
+      <workItem from="1600352785006" duration="18799000" />
     </task>
     <task id="LOCAL-00001" summary="Updated base logic for logging/registering user">
       <created>1600015848615</created>
@@ -121,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600366504007</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added feature to return rented vehicle.">
+      <created>1600369377393</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600369377393</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +154,8 @@
     <MESSAGE value="Added pages for adding vehicles and viewing vehicles list." />
     <MESSAGE value="Added feature to rent vehicles &amp; various other minor fixes" />
     <MESSAGE value="Added feature to remove vehicles from the database + few other minor fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added feature to remove vehicles from the database + few other minor fixes" />
+    <MESSAGE value="Added feature to return rented vehicle." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added feature to return rented vehicle." />
   </component>
   <component name="WindowStateProjectService">
     <state x="364" y="0" key="#PHP" timestamp="1600009098267">
@@ -171,16 +182,16 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="454" y="89" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1600019938264" />
-    <state x="847" y="296" key="NewPhpFileDialog" timestamp="1600368658814">
+    <state x="847" y="296" key="NewPhpFileDialog" timestamp="1600373062874">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="847" y="293" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1600020067084" />
-    <state x="847" y="296" key="NewPhpFileDialog/0.0.1366.746@0.0.1366.746" timestamp="1600368658814" />
-    <state x="283" y="105" key="Vcs.Push.Dialog.v2" timestamp="1600366520232">
+    <state x="847" y="296" key="NewPhpFileDialog/0.0.1366.746@0.0.1366.746" timestamp="1600373062874" />
+    <state x="283" y="105" key="Vcs.Push.Dialog.v2" timestamp="1600369381247">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="283" y="104" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1600026598641" />
-    <state x="283" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.746@0.0.1366.746" timestamp="1600366520232" />
+    <state x="283" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.746@0.0.1366.746" timestamp="1600369381247" />
     <state x="491" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600181520886">
       <screen x="0" y="0" width="1366" height="746" />
     </state>

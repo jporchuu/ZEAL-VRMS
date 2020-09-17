@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Delete Vehicle</title>
+    <title>Edit Vehicle</title>
 </head>
 <body>
 <center>
@@ -51,9 +51,8 @@ echo"
     }
 }
 </script>
-
-    <h3>Select a Vehicle to Remove:</label></h3><br/>
-    <form action = 'DeleteReconfirm.php' method = 'post'>
+    <h3>Select a Vehicle to Edit:</label></h3><br/>
+    <form action = 'EditVehicleFields.php' method = 'post'>
 
     <input type='radio' name='vehicleType' id='v1' value='car' onclick='Checkradiobutton()'/>Passenger Car<br/>";
 echo "<select name = 'vehicle' id='CarSel'> <option disabled selected value style='display:none'></option>";
@@ -79,13 +78,13 @@ while ($row = mysqli_fetch_array($result_out_motorC)) {
 echo "</select> <br> <br>";
 
 echo"
-    <input type = 'submit' value = 'Delete Selected Vehicle'>
+    <input type = 'submit' value = 'Edit Selected Vehicle'>
         </form>
         <a href='Menu.php' class='button'><b>B A C K</b></a>";
 
 mysqli_close($sqlConnect);
 
 ?>
-</center>
+</center>"
 </body>
 </html>
