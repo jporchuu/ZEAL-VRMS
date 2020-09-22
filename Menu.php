@@ -1,6 +1,15 @@
 <?php
 session_start();
+?>
 
+<html>
+<head>
+    <title>Main Menu</title>
+    <link rel="stylesheet" href="ui.css">
+</head>
+<body id="Login-Menu">
+<center>
+<?php
 // Verify mySQL
 $sqlConnect = mysqli_connect("localhost","root","");
 if(!$sqlConnect) {
@@ -15,23 +24,30 @@ if(!$selectDB) {
 
 $access = $_SESSION['access'];
 
-echo "<center>
-    <br><h2>MAIN MENU</h2><br>
+echo "<br><img src='assets/img/zeal1.png' width=50%><br><br><br>
 
-    <a href='VehicleList.php' class='button'>View Vehicles List</a> <br> <br>
+    <div id='loginMenuArea' class='square'>
 
-    <a href='RentVehicle.php' class='button'>Rent Vehicle</a> <br> <br>
+    <a href='VehicleList.php' class='button'>View Vehicles List</a>
 
-    <a href='ReturnVehicle.php' class='button'>Return Vehicle</a> <br> <br>";
+    <a href='RentVehicle.php' class='button'>Rent a Vehicle</a>
+
+    <a href='ReturnVehicle.php' class='button'>Return a Vehicle</a> <br> <br> <br> <br>";
 
 if ($access == 'Admin'){
 
     echo "
-    <a href='AddVehicle.html' class='button'>Add Vehicle </a> <br> <br>
+    <a href='AddVehicle.html' class='button'>Add Vehicle</a>
 
-    <a href='DeleteVehicle.php' class='button'>Delete Vehicle</a> <br> <br>
+    <a href='DeleteVehicle.php' class='button'>Delete Vehicle</a>
 
-    <a href='EditVehicle.php' class='button'>Edit Vehicle</a> <br> <br>";
+    <a href='EditVehicle.php' class='button'>Edit Vehicle</a> <br> <br> <br> <br>";
 }
-echo "<a href='Login.html' class='button'>L O G   -   O U T</a></center>";
+echo "<a id='logoff' href='Login.html' class='button'>LOG - OUT</a> </div>";
+
+mysqli_close($sqlConnect);
 ?>
+
+</center>
+</body>
+</html>

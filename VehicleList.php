@@ -1,8 +1,20 @@
 <html>
 <head>
     <title>Vehicles Database</title>
+    <link rel="stylesheet" href="ui.css">
 </head>
 <body>
+<div class="topnav">
+    <img src='assets/img/zeal2.png' width=10%>
+    <a id='topNavBtn' href='Login.html' class='button'>LOG-OUT</a>
+    <a id='topNavBtn' href='ReturnVehicle.php' class='button'>Return a Vehicle</a>
+    <a id='topNavBtn' href='RentVehicle.php' class='button'>Rent a Vehicle</a>
+    <a id='topNavBtn' href='VehicleList.php' class='button'>Vehicle Database</a>
+    <a id='topNavBtn' href='Menu.php' class='button'>Menu</a>
+</div>
+<center>
+    <br>
+<h2 id="blueLabel">VEHICLE DATABASE</h2>
 <?php
     // Verify mySQL
     $sqlConnect = mysqli_connect("localhost","root","");
@@ -23,7 +35,7 @@
     }
 
     // Car Table
-    echo "<center> <table border='1'>
+    echo " <table border='1'>
     <tr>
     <th>CarID</th>
     <th>Vehicle Name</th>
@@ -111,5 +123,6 @@
 
     mysqli_close($sqlConnect);
 ?>
+</center>
 </body>
 </html>

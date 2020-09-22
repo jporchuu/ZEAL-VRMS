@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>USER ACCOUNT LOGIN</title>
+    <link rel="stylesheet" href="ui.css">
+    <div class="square"></div>
 </head>
-<body>
-<center>
+<body id="Login-Menu">
     <br><h2>USER LOGIN</h2><br>
+    <div id="loginMenuArea" class="square">
     <form action = "LoginCheck.php" method = "post">
-        Username: <input type = "text" name = "username"> <br> <br>
-        Password: <input type = "password" name = "password"> <br> <br>
-        <input type = "submit" value = "Log-in">
+        Username<br> <br>
+        <input id = "loginForm" type = "text" name = "username"> <br> <br> <br> <br>
+        Password<br> <br>
+        <input id = "loginForm" type = "password" name = "password"> <br> <br> <br> <br>
+        <input type = "submit" value = "Log-in"><br> <br> <br> <br>
     </form>
 
     <a href="Register.html" class="button"><b>Create New Account</b></a>
-
-</center>
+    </div>
 </body>
 </html>

@@ -1,8 +1,18 @@
 <html>
 <head>
     <title>Rent Vehicle</title>
+    <link rel="stylesheet" href="ui.css">
 </head>
 <body>
+<div class="topnav">
+    <img src='assets/img/zeal2.png' width=10%>
+    <a id='topNavBtn' href='Login.html' class='button'>LOG-OUT</a>
+    <a id='topNavBtn' href='ReturnVehicle.php' class='button'>Return a Vehicle</a>
+    <a id='topNavBtn' href='RentVehicle.php' class='button'>Rent a Vehicle</a>
+    <a id='topNavBtn' href='VehicleList.php' class='button'>Vehicle Database</a>
+    <a id='topNavBtn' href='Menu.php' class='button'>Menu</a>
+</div>
+<center>
 <?php
     // Verify mySQL
     $sqlConnect = mysqli_connect("localhost","root","");
@@ -50,12 +60,10 @@ echo"
     }
 }
 </script>
-
-<center>
-    <h3>Select Vehicle to Rent:</label></h3><br/>
+    <h3>Select a Vehicle to Rent:</label></h3><br/>
     <form action = 'RentConfirm.php' method = 'post'>
 
-    <input type='radio' name='vehicleType' id='v1' value='car' onclick='Checkradiobutton()'/>Passenger Car<br/>";
+    <input type='radio' name='vehicleType' id='v1' value='car' onclick='Checkradiobutton()'/> Passenger Car<br/>";
     echo "<select name = 'vehicle' id='CarSel'> <option disabled selected value style='display:none'></option>";
     while ($row = mysqli_fetch_array($result_out_Car)) {
         echo "<option value='" . $row['VehicleName'] . "'>" . $row['VehicleName'] . "</option>";
@@ -63,7 +71,7 @@ echo"
     echo "</select> <br> <br>";
 
     echo"
-    <input type='radio' name='vehicleType' id='v2' value='vanSUV' onclick='Checkradiobutton()'/>SUV / Van<br/>";
+    <input type='radio' name='vehicleType' id='v2' value='vanSUV' onclick='Checkradiobutton()'/> SUV / Van<br/>";
         echo "<select name = 'vehicle' id='vanSUVSel'> <option disabled selected value style='display:none'></option>";
         while ($row = mysqli_fetch_array($result_out_vanSUV)) {
             echo "<option value='" . $row['VehicleName'] . "'>" . $row['VehicleName'] . "</option>";
@@ -71,7 +79,7 @@ echo"
         echo "</select> <br> <br>";
 
     echo"
-    <input type='radio' name='vehicleType' id ='v3' value='motorC' onclick='Checkradiobutton()'/> Motorcycles: <br/>";
+    <input type='radio' name='vehicleType' id ='v3' value='motorC' onclick='Checkradiobutton()'/> Motorcycle <br/>";
     echo "<select name = 'vehicle' id='motorCSel'> <option disabled selected value style='display:none'></option>";
     while ($row = mysqli_fetch_array($result_out_motorC)) {
         echo "<option value='" . $row['VehicleName'] . "'>" . $row['VehicleName'] . "</option>";
@@ -81,11 +89,11 @@ echo"
     echo"
     <input type = 'submit' value = 'Rent Selected Vehicle'>
         </form>
-        <a href='Menu.php' class='button'><b>B A C K</b></a>
-    </center>";
+        <a href='Menu.php' class='button'><b>B A C K</b></a>";
 
     mysqli_close($sqlConnect);
 
 ?>
+</center>
 </body>
 </html>

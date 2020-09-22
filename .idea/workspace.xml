@@ -11,13 +11,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da1526da-3945-43ce-8610-8f2b590cb719" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/EditVehicle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EditVehicleConfirm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EditVehicleFields.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EditVehicleReconfirm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/ariblk.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/zeal1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/zeal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AddVehicle.html" beforeDir="false" afterPath="$PROJECT_DIR$/AddVehicle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AddVehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/AddVehicle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeleteConfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteConfirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeleteReconfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteReconfirm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeleteVehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteVehicle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditVehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/EditVehicle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditVehicleConfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/EditVehicleConfirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditVehicleFields.php" beforeDir="false" afterPath="$PROJECT_DIR$/EditVehicleFields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditVehicleReconfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/EditVehicleReconfirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginCheck.php" beforeDir="false" afterPath="$PROJECT_DIR$/LoginCheck.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegisterCheck.php" beforeDir="false" afterPath="$PROJECT_DIR$/RegisterCheck.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentConfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/RentConfirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentVehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/RentVehicle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReturnConfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/ReturnConfirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReturnVehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/ReturnVehicle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VehicleList.php" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleList.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +48,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -40,18 +58,22 @@
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1hSCgoS5ItDRrLIJL7vpEqY2yq8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -80,7 +102,9 @@
       <workItem from="1600070430046" duration="859000" />
       <workItem from="1600162638690" duration="5692000" />
       <workItem from="1600177259496" duration="11485000" />
-      <workItem from="1600352785006" duration="18799000" />
+      <workItem from="1600352785006" duration="19072000" />
+      <workItem from="1600784958562" duration="4753000" />
+      <workItem from="1600793046357" duration="13341000" />
     </task>
     <task id="LOCAL-00001" summary="Updated base logic for logging/registering user">
       <created>1600015848615</created>
@@ -131,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600369377393</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added feature to edit vehicle information.">
+      <created>1600374759640</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600374759640</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,12 +181,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Updated base logic for logging/registering user" />
     <MESSAGE value="Added pages for adding vehicles and viewing vehicles list." />
     <MESSAGE value="Added feature to rent vehicles &amp; various other minor fixes" />
     <MESSAGE value="Added feature to remove vehicles from the database + few other minor fixes" />
     <MESSAGE value="Added feature to return rented vehicle." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added feature to return rented vehicle." />
+    <MESSAGE value="Added feature to edit vehicle information." />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
     <state x="364" y="0" key="#PHP" timestamp="1600009098267">
@@ -187,20 +220,20 @@
     </state>
     <state x="847" y="293" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1600020067084" />
     <state x="847" y="296" key="NewPhpFileDialog/0.0.1366.746@0.0.1366.746" timestamp="1600373062874" />
-    <state x="283" y="105" key="Vcs.Push.Dialog.v2" timestamp="1600369381247">
+    <state x="283" y="105" key="Vcs.Push.Dialog.v2" timestamp="1600374767220">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="283" y="104" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1600026598641" />
-    <state x="283" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.746@0.0.1366.746" timestamp="1600369381247" />
+    <state x="283" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.746@0.0.1366.746" timestamp="1600374767220" />
     <state x="491" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600181520886">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="491" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1600015866829" />
     <state x="491" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.746@0.0.1366.746" timestamp="1600181520886" />
-    <state x="387" y="0" width="592" height="746" key="find.popup" timestamp="1600168766721">
+    <state x="590" y="0" width="592" height="746" key="find.popup" timestamp="1600785326196">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
-    <state x="387" y="0" width="592" height="746" key="find.popup/0.0.1366.746@0.0.1366.746" timestamp="1600168766721" />
+    <state x="590" y="0" width="592" height="746" key="find.popup/0.0.1366.746@0.0.1366.746" timestamp="1600785326196" />
     <state x="347" y="161" key="run.anything.popup" timestamp="1600013342397">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

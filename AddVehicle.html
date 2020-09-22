@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Add Vehicle</title>
+    <link rel="stylesheet" href="ui.css">
 </head>
-<body><center>
-
-    <br><h2>Add New Vehicle to the Database</h2><br>
+<body>
+<div class="topnav">
+    <img src='assets/img/zeal2.png' width=10%>
+    <a id='topNavBtn' href='Login.html' class='button'>LOG-OUT</a>
+    <a id='topNavBtn' href='ReturnVehicle.php' class='button'>Return a Vehicle</a>
+    <a id='topNavBtn' href='RentVehicle.php' class='button'>Rent a Vehicle</a>
+    <a id='topNavBtn' href='VehicleList.php' class='button'>Vehicle Database</a>
+    <a id='topNavBtn' href='Menu.php' class='button'>Menu</a>
+</div>
+<center>
+    <h2>Add New Vehicle to the Database</h2><br>
     <form action = "AddVehicle.php" method = "post">
 
-        Vehicle Name:<br> <input type = "text" name = "vName"> <br> <br>
+        Vehicle Name<br> <br> <input type = "text" name = "vName"> <br> <br> <br>
 
-        Rent Cost Per Day:<br> <input type = "text" name = "costPerDay"> <br> <br>
+        Rent Cost Per Day<br> <br> <input type = "text" name = "costPerDay"> <br> <br> <br>
 
-        Vehicle Type:<br>
+        Vehicle Type<br> <br>
         <input type="radio" id="car" name="vehicle" value="Car" checked="checked">
         <label for="car">Passenger Car</label><br>
         <input type="radio" id="vansuv" name="vehicle" value="VanSUV">

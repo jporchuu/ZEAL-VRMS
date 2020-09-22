@@ -5,9 +5,19 @@ session_start();
 <html>
 <head>
     <title>Vehicle Information has been successfully Edited</title>
+    <link rel="stylesheet" href="ui.css">
 </head>
 <body>
+<div class="topnav">
+    <img src='assets/img/zeal2.png' width=10%>
+    <a id='topNavBtn' href='Login.html' class='button'>LOG-OUT</a>
+    <a id='topNavBtn' href='ReturnVehicle.php' class='button'>Return a Vehicle</a>
+    <a id='topNavBtn' href='RentVehicle.php' class='button'>Rent a Vehicle</a>
+    <a id='topNavBtn' href='VehicleList.php' class='button'>Vehicle Database</a>
+    <a id='topNavBtn' href='Menu.php' class='button'>Menu</a>
+</div>
 <center>
+    <div id="check">
     <?php
     // Verify mySQL
     $sqlConnect = mysqli_connect("localhost","root","");
@@ -41,11 +51,12 @@ session_start();
 
     mysqli_query($sqlConnect, $editData);
     mysqli_query($sqlConnect, $editData2);
-
+    mysqli_close($sqlConnect);
     ?>
     <h2>Vehicle Successfully Edited</h2> <br>
-    <a href='VehicleList.php' class='button'> View Database </a> <br> <br>
-    <a href='Menu.php' class='button'><b>B A C K</b></a>
+    <a href='VehicleList.php' class='button'> View Database </a> <br> <br> <br>
+    <a href='Menu.php' class='button'><b>Back to Menu</b></a>
+    </div>
 </center>
 </body>
 </html>

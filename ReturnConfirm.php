@@ -1,49 +1,63 @@
 <html>
 <head>
-    <title>Vehicle Returned</title>
+    <title>Vehicle Return Status</title>
+    <link rel="stylesheet" href="ui.css">
 </head>
 <body>
-<?php
-// Verify mySQL
-$sqlConnect = mysqli_connect("localhost","root","");
-if(!$sqlConnect) {
-    die();
-}
+<div class="topnav">
+    <img src='assets/img/zeal2.png' width=10%>
+    <a id='topNavBtn' href='Login.html' class='button'>LOG-OUT</a>
+    <a id='topNavBtn' href='ReturnVehicle.php' class='button'>Return a Vehicle</a>
+    <a id='topNavBtn' href='RentVehicle.php' class='button'>Rent a Vehicle</a>
+    <a id='topNavBtn' href='VehicleList.php' class='button'>Vehicle Database</a>
+    <a id='topNavBtn' href='Menu.php' class='button'>Menu</a>
+</div>
+<center>
+    <div id="check">
+    <?php
+    // Verify mySQL
+    $sqlConnect = mysqli_connect("localhost","root","");
+    if(!$sqlConnect) {
+        die();
+    }
 
-// Verify Database
-$selectDB = mysqli_select_db($sqlConnect,'VehicleDatabase');
-if(!$selectDB) {
-    die("Can't find the database!".mysqli_error());
+    // Verify Database
+    $selectDB = mysqli_select_db($sqlConnect,'VehicleDatabase');
+    if(!$selectDB) {
+        die("Can't find the database!".mysqli_error());
 
-}
+    }
 
-if(empty($_POST["vehicleType"])){
-    echo "<center><h2>Input Error</h2> <br>";
+    if(empty($_POST["vehicleType"]) || empty($_POST["vehicle"])){
+        echo "<h2>Input Error</h2> <br>";
 
-    if (empty($_POST["vehicleType"])) echo "<h3>You did not choose a vehicle to return.</h3>";
+        if (empty($_POST["vehicleType"])) echo "- You did not choose a vehicle type to return.<br><br>";
+        if (empty($_POST["vehicle"])) echo "- You did not choose any vehicle to return.<br><br>";
 
-    echo "<a href='ReturnVehicle.php' class='button'> B A C K </a> </center>";
+        echo "<br><br><a href='ReturnVehicle.php' class='button'> B A C K </a> </center>";
 
-}
+    }
 
-else{
-    $vehicleName = $_POST["vehicle"];
-    if ($_POST["vehicleType"] == 'car') $return = "UPDATE CarDetails SET Availability=1 WHERE VehicleName='$vehicleName'";
+    else{
+        $vehicleName = $_POST["vehicle"];
+        if ($_POST["vehicleType"] == 'car') $return = "UPDATE CarDetails SET Availability=1 WHERE VehicleName='$vehicleName'";
 
-    else if ($_POST["vehicleType"] == 'vanSUV') $return = "UPDATE vanSUVDetails SET Availability=1 WHERE VehicleName='$vehicleName'";
+        else if ($_POST["vehicleType"] == 'vanSUV') $return = "UPDATE vanSUVDetails SET Availability=1 WHERE VehicleName='$vehicleName'";
 
-    else if ($_POST["vehicleType"] == 'motorC') $return = "UPDATE motorCDetails SET Availability=1 WHERE VehicleName='$vehicleName'";
+        else if ($_POST["vehicleType"] == 'motorC') $return = "UPDATE motorCDetails SET Availability=1 WHERE VehicleName='$vehicleName'";
 
-    mysqli_query($sqlConnect, $return);
+        mysqli_query($sqlConnect, $return);
 
-    echo "<center><br><h2>VEHICLE SUCCESSFULLY RETURNED</h2> <br> <br>
+        echo "<center><br><h2>VEHICLE SUCCESSFULLY RETURNED</h2> <br> <br>
+    
+            <a href='VehicleList.php' class='button'> View Database </a> <br> <br>
+            <a href='Menu.php' class='button'> B A C K </a> ";
 
-        <a href='VehicleList.php' class='button'> View Database </a> <br> <br>
-        <a href='Menu.php' class='button'> B A C K </a> </center>";
-
-}
-echo "</center>";
-mysqli_close($sqlConnect);
-?>
+    }
+    echo "</center>";
+    mysqli_close($sqlConnect);
+    ?>
+    </div>
+</center>
 </body>
 </html>

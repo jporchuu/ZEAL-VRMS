@@ -1,8 +1,17 @@
 <html>
 <head>
     <title>Return Vehicle</title>
+    <link rel="stylesheet" href="ui.css">
 </head>
 <body>
+<div class="topnav">
+    <img src='assets/img/zeal2.png' width=10%>
+    <a id='topNavBtn' href='Login.html' class='button'>LOG-OUT</a>
+    <a id='topNavBtn' href='ReturnVehicle.php' class='button'>Return a Vehicle</a>
+    <a id='topNavBtn' href='RentVehicle.php' class='button'>Rent a Vehicle</a>
+    <a id='topNavBtn' href='VehicleList.php' class='button'>Vehicle Database</a>
+    <a id='topNavBtn' href='Menu.php' class='button'>Menu</a>
+</div>
 <center>
 <?php
 // Verify mySQL
@@ -54,7 +63,7 @@ echo"
     <h3>Select a Vehicle to Return:</label></h3><br/>
     <form action = 'ReturnConfirm.php' method = 'post'>
 
-    <input type='radio' name='vehicleType' id='v1' value='car' onclick='Checkradiobutton()'/>Passenger Car<br/>";
+    <input type='radio' name='vehicleType' id='v1' value='car' onclick='Checkradiobutton()'/> Passenger Car<br/>";
 echo "<select name = 'vehicle' id='CarSel'> <option disabled selected value style='display:none'></option>";
 while ($row = mysqli_fetch_array($result_out_Car)) {
     echo "<option value='" . $row['VehicleName'] . "'>" . $row['VehicleName'] . "</option>";
@@ -62,7 +71,7 @@ while ($row = mysqli_fetch_array($result_out_Car)) {
 echo "</select> <br> <br>";
 
 echo"
-    <input type='radio' name='vehicleType' id='v2' value='vanSUV' onclick='Checkradiobutton()'/>SUV / Van<br/>";
+    <input type='radio' name='vehicleType' id='v2' value='vanSUV' onclick='Checkradiobutton()'/> SUV / Van<br/>";
 echo "<select name = 'vehicle' id='vanSUVSel'> <option disabled selected value style='display:none'></option>";
 while ($row = mysqli_fetch_array($result_out_vanSUV)) {
     echo "<option value='" . $row['VehicleName'] . "'>" . $row['VehicleName'] . "</option>";
@@ -70,7 +79,7 @@ while ($row = mysqli_fetch_array($result_out_vanSUV)) {
 echo "</select> <br> <br>";
 
 echo"
-    <input type='radio' name='vehicleType' id ='v3' value='motorC' onclick='Checkradiobutton()'/> Motorcycles: <br/>";
+    <input type='radio' name='vehicleType' id ='v3' value='motorC' onclick='Checkradiobutton()'/> Motorcycle <br/>";
 echo "<select name = 'vehicle' id='motorCSel'> <option disabled selected value style='display:none'></option>";
 while ($row = mysqli_fetch_array($result_out_motorC)) {
     echo "<option value='" . $row['VehicleName'] . "'>" . $row['VehicleName'] . "</option>";

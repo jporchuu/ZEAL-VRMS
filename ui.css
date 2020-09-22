@@ -1,0 +1,164 @@
+/* custom fonts */
+@font-face {
+    font-family: 'Arial-Black';
+    src: url('assets/fonts/ariblk.ttf') format('truetype');
+}
+
+body{
+    font-family: Arial;
+    font-weight: bold;
+}
+
+/* login page formatting */
+#Login-Menu {
+    text-align: right;
+    font-family: Arial;
+    background: rgb(0,100,148);
+    background: linear-gradient(90deg, rgba(0,100,148,1) 25%, rgba(56,171,225,1) 75%, rgba(97,223,235,1) 100%);
+}
+
+#loginMenuArea{
+    font-family: Arial;
+    font-weight: bold;
+    padding: 75px;
+    width: 40%;
+    border-radius: 25px;
+    color: #424242;
+    background-color: rgba(255,255,255,0.4);
+}
+
+/* forms info check page formatting */
+#check{
+    border: 3px solid #38abe1;
+    padding: 75px;
+    margin: 50px 250px;
+    border-radius: 25px;
+    color: #424242;
+    background-color: rgba(255,255,255,0.4);
+    font-family: Arial;
+}
+
+#checkBody{
+    text-align: center;
+}
+
+#logoff{
+
+}
+
+
+h2{
+    letter-spacing: 0.1em;
+    font-family: Arial-Black;
+    color: #000000;
+}
+
+#blueLabel{
+    color: #38abe1;
+}
+
+h3{
+    font-family: Arial-Black;
+    color: #000000;
+}
+
+/* normal anchor hyperlink buttons */
+a{
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #000000;
+    box-shadow: 0px 0px;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #000000;
+    background-color: white;
+}
+
+/* html forms */
+input[type=text], input[type=password]{
+    border-width:0px;
+    border:none;
+    border-bottom: 3px solid #000000;
+    padding: 10px;
+    font-family: Arial;
+    color: #424242;
+    background-color: rgba(0,0,0,0.1);
+}
+
+input[type=submit]{
+    border: 3px solid #424242;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 60px;
+    border-radius: 0px;
+    color: #424242;
+    background-color: rgba(255,255,255,0);
+    transition: 0.2s;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: #000000;
+    border: 3px solid #000000;
+}
+
+/* username/password input */
+#loginForm{
+    background-color: rgba(255,255,255,0.3);
+    border-bottom: 3px solid #FFFFFF;
+}
+
+/* top navigation pane */
+.topnav {
+    overflow: hidden;
+    border-bottom: 2px solid #38abe1;
+}
+
+#topNavBtn{
+    color: #000000;
+    background-color: white;
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+#topNavBtn:hover {
+    color: white;
+    background-color: #38abe1;
+}
+
+/* tables formatting */
+
+table{
+    margin: 50px;
+    font-family: Arial;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: #38abe1;
+    color: white;
+}
