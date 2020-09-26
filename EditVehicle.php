@@ -61,7 +61,7 @@
     }
     </script>
         <h3>Select a Vehicle to Edit</label></h3><br/>
-        <form action = 'EditVehicleFields.php' method = 'post'>
+        <form action = 'EditVehicleSelection.php' method = 'post'>
     
         <input type='radio' name='vehicleType' id='v1' value='car' onclick='Checkradiobutton()'/> Passenger Car<br/>";
     echo "<select name = 'vehicle' id='CarSel'> <option disabled selected value style='display:none'></option>";

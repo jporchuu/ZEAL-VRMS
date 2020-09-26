@@ -44,30 +44,30 @@ session_start();
         die();
     }
 
-    $_SESSION['vType'] = $_POST["vehicleType"];
-    $_SESSION['prevName'] = $_POST['vehicle'];
+    $vehicleName = $_SESSION['prevName1'] = $_SESSION['prevName'];
+    $vehicleType = $_SESSION['vType1'] = $_SESSION['vType'];
 
     $defaultPrice = 0;
 
-    if ($_POST["vehicleType"] == 'car') {
+    if ($vehicleType == 'car') {
 
-        while ($row = mysqli_fetch_array($result_out_Car)) if ($_POST['vehicle'] == $row['VehicleName']) $defaultPrice = $row['costPerDay'];
+        while ($row = mysqli_fetch_array($result_out_Car)) if ($vehicleName == $row['VehicleName']) $defaultPrice = $row['costPerDay'];
 
     }
 
-    else if ($_POST["vehicleType"] == 'vanSUV'){
-        while ($row = mysqli_fetch_array($result_out_vanSUV)) if ($_POST['vehicle'] == $row['VehicleName']) $defaultPrice = $row['costPerDay'];
+    else if ($vehicleType == 'vanSUV'){
+        while ($row = mysqli_fetch_array($result_out_vanSUV)) if ($vehicleName == $row['VehicleName']) $defaultPrice = $row['costPerDay'];
     }
 
-    else if ($_POST["vehicleType"] == 'motorC'){
-        while ($row = mysqli_fetch_array($result_out_motorC)) if ($_POST['vehicle'] == $row['VehicleName']) $defaultPrice = $row['costPerDay'];
+    else if ($vehicleType == 'motorC'){
+        while ($row = mysqli_fetch_array($result_out_motorC)) if ($vehicleName == $row['VehicleName']) $defaultPrice = $row['costPerDay'];
     }
 
     echo"
         <br><h2>Edit Vehicle Information</h2><br>
         <form action = 'EditVehicleReconfirm.php' method = 'post'>
     
-            Vehicle Name:<br> <input type = 'text' name = 'vName' value='$_POST[vehicle]'> <br> <br>
+            Vehicle Name:<br> <input type = 'text' name = 'vName' value='$vehicleName'> <br> <br>
     
             Rent Cost Per Day:<br> <input type = 'text' name = 'costPerDay' value='$defaultPrice'> <br> <br>
     

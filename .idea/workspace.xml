@@ -11,8 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da1526da-3945-43ce-8610-8f2b590cb719" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/EditVehicleSelection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeleteConfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteConfirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditVehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/EditVehicle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditVehicleFields.php" beforeDir="false" afterPath="$PROJECT_DIR$/EditVehicleFields.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditVehicleReconfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/EditVehicleReconfirm.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +86,8 @@
       <workItem from="1600352785006" duration="19072000" />
       <workItem from="1600784958562" duration="4753000" />
       <workItem from="1600793046357" duration="13537000" />
-      <workItem from="1601082071436" duration="4201000" />
+      <workItem from="1601082071436" duration="5665000" />
+      <workItem from="1601105947267" duration="2315000" />
     </task>
     <task id="LOCAL-00001" summary="Updated base logic for logging/registering user">
       <created>1600015848615</created>
@@ -148,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600808351539</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Deleting a vehicle will re-order the respective vehicle IDs">
+      <created>1601094527140</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601094527140</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +186,8 @@
     <MESSAGE value="Added feature to return rented vehicle." />
     <MESSAGE value="Added feature to edit vehicle information." />
     <MESSAGE value="Applied base user interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Deleting a vehicle will re-order the respective vehicle IDs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleting a vehicle will re-order the respective vehicle IDs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="364" y="0" key="#PHP" timestamp="1600009098267">
@@ -202,16 +214,16 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="454" y="89" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1600019938264" />
-    <state x="847" y="296" key="NewPhpFileDialog" timestamp="1600373062874">
+    <state x="847" y="296" width="355" height="152" key="NewPhpFileDialog" timestamp="1601106709259">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="847" y="293" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1600020067084" />
-    <state x="847" y="296" key="NewPhpFileDialog/0.0.1366.746@0.0.1366.746" timestamp="1600373062874" />
-    <state x="283" y="105" key="Vcs.Push.Dialog.v2" timestamp="1600808357421">
+    <state x="847" y="296" width="355" height="152" key="NewPhpFileDialog/0.0.1366.746@0.0.1366.746" timestamp="1601106709259" />
+    <state x="283" y="105" key="Vcs.Push.Dialog.v2" timestamp="1601094929737">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="283" y="104" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1600026598641" />
-    <state x="283" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.746@0.0.1366.746" timestamp="1600808357421" />
+    <state x="283" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.746@0.0.1366.746" timestamp="1601094929737" />
     <state x="491" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600181520886">
       <screen x="0" y="0" width="1366" height="746" />
     </state>

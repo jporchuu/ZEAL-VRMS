@@ -18,8 +18,8 @@ session_start();
 <center>
     <div id="check">
     <?php
-        $vehicleType = $_SESSION['vType'];
-        $prevName = $_SESSION['prevName'];
+        $vehicleType = $_SESSION['vType1'];
+        $prevName = $_SESSION['prevName1'];
         $_SESSION['prevName2'] = $prevName;
         $_SESSION['vType2'] = $vehicleType;
         $_SESSION['vName'] = $_POST["vName"];
