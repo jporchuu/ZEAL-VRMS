@@ -33,11 +33,31 @@ session_start();
     $deleteThis = $_SESSION['deleteThis'];
     $vehicleType = $_SESSION['vType'];
 
-    if ($vehicleType == 'car') $removeData = "DELETE FROM CarDetails WHERE VehicleName = '$deleteThis'";
-    else if ($vehicleType  == 'vanSUV') $removeData = "DELETE FROM vanSUVDetails WHERE VehicleName = '$deleteThis'";
-    else if ($vehicleType  == 'motorC') $removeData = "DELETE FROM motorCDetails WHERE VehicleName = '$deleteThis'";
+    if ($vehicleType == 'car'){
+        $removeData = "DELETE FROM CarDetails WHERE VehicleName = '$deleteThis';";
+        $resetID = "ALTER TABLE CarDetails DROP CarID;";
+        $resetInc = "ALTER TABLE CarDetails AUTO_INCREMENT = 1;";
+        $setInc = "ALTER TABLE CarDetails ADD CarID int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST;";
+    }
+
+    else if ($vehicleType  == 'vanSUV'){
+        $removeData = "DELETE FROM vanSUVDetails WHERE VehicleName = '$deleteThis'";
+        $resetID = "ALTER TABLE vanSUVDetails DROP vanSUVID;";
+        $resetInc = "ALTER TABLE vanSUVDetails AUTO_INCREMENT = 1;";
+        $setInc = "ALTER TABLE vanSUVDetails ADD vanSUVID int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST;";
+    }
+
+    else if ($vehicleType  == 'motorC'){
+        $removeData = "DELETE FROM motorCDetails WHERE VehicleName = '$deleteThis';";
+        $resetID = "ALTER TABLE motorCDetails DROP motorCID;";
+        $resetInc = "ALTER TABLE motorCDetails DROP motorCID; ALTER TABLE motorCDetails AUTO_INCREMENT = 1;";
+        $setInc = "ALTER TABLE motorCDetails ADD motorCID int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST;";
+    }
 
     mysqli_query($sqlConnect, $removeData);
+    mysqli_query($sqlConnect, $resetID);
+    mysqli_query($sqlConnect, $resetInc);
+    mysqli_query($sqlConnect, $setInc);
 
     ?>
     <h2>Vehicle Successfully Deleted</h2> <br>

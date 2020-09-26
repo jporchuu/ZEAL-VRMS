@@ -11,30 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da1526da-3945-43ce-8610-8f2b590cb719" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/fonts/ariblk.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/zeal1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/zeal2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AddVehicle.html" beforeDir="false" afterPath="$PROJECT_DIR$/AddVehicle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AddVehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/AddVehicle.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeleteConfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteConfirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeleteReconfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteReconfirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeleteVehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/DeleteVehicle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EditVehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/EditVehicle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EditVehicleConfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/EditVehicleConfirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EditVehicleFields.php" beforeDir="false" afterPath="$PROJECT_DIR$/EditVehicleFields.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EditVehicleReconfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/EditVehicleReconfirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginCheck.php" beforeDir="false" afterPath="$PROJECT_DIR$/LoginCheck.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegisterCheck.php" beforeDir="false" afterPath="$PROJECT_DIR$/RegisterCheck.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RentConfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/RentConfirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RentVehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/RentVehicle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReturnConfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/ReturnConfirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReturnVehicle.php" beforeDir="false" afterPath="$PROJECT_DIR$/ReturnVehicle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VehicleList.php" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleList.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +82,8 @@
       <workItem from="1600177259496" duration="11485000" />
       <workItem from="1600352785006" duration="19072000" />
       <workItem from="1600784958562" duration="4753000" />
-      <workItem from="1600793046357" duration="13341000" />
+      <workItem from="1600793046357" duration="13537000" />
+      <workItem from="1601082071436" duration="4201000" />
     </task>
     <task id="LOCAL-00001" summary="Updated base logic for logging/registering user">
       <created>1600015848615</created>
@@ -162,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600374759640</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Applied base user interface">
+      <created>1600808351538</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1600808351539</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +174,7 @@
     <MESSAGE value="Added feature to remove vehicles from the database + few other minor fixes" />
     <MESSAGE value="Added feature to return rented vehicle." />
     <MESSAGE value="Added feature to edit vehicle information." />
+    <MESSAGE value="Applied base user interface" />
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
@@ -220,11 +207,11 @@
     </state>
     <state x="847" y="293" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1600020067084" />
     <state x="847" y="296" key="NewPhpFileDialog/0.0.1366.746@0.0.1366.746" timestamp="1600373062874" />
-    <state x="283" y="105" key="Vcs.Push.Dialog.v2" timestamp="1600374767220">
+    <state x="283" y="105" key="Vcs.Push.Dialog.v2" timestamp="1600808357421">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="283" y="104" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1600026598641" />
-    <state x="283" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.746@0.0.1366.746" timestamp="1600374767220" />
+    <state x="283" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.746@0.0.1366.746" timestamp="1600808357421" />
     <state x="491" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600181520886">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
