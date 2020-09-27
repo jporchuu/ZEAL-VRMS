@@ -10,9 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da1526da-3945-43ce-8610-8f2b590cb719" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="da1526da-3945-43ce-8610-8f2b590cb719" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,13 +24,11 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
@@ -51,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../parallax-effect-better-demo-in-description/dist" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -89,10 +85,7 @@
       <workItem from="1601141057564" duration="9104000" />
       <workItem from="1601153332860" duration="23000" />
       <workItem from="1601153495901" duration="219000" />
-      <workItem from="1601183840641" duration="715000" />
-      <workItem from="1601184968658" duration="1119000" />
-      <workItem from="1601186124892" duration="10759000" />
-      <workItem from="1601198886541" duration="315000" />
+      <workItem from="1601183840641" duration="340000" />
     </task>
     <task id="LOCAL-00001" summary="Updated base logic for logging/registering user">
       <created>1600015848615</created>
@@ -178,21 +171,7 @@
       <option name="project" value="LOCAL" />
       <updated>1601183929227</updated>
     </task>
-    <task id="LOCAL-00013" summary="UI improvements">
-      <created>1601184298710</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1601184298710</updated>
-    </task>
-    <task id="LOCAL-00014" summary="UI improvements">
-      <created>1601184304200</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1601184304200</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,8 +201,7 @@
     <MESSAGE value="Deleting a vehicle will re-order the respective vehicle IDs" />
     <MESSAGE value="Now confirms a vehicle edit selection (+ error trapping)" />
     <MESSAGE value="UI impovements" />
-    <MESSAGE value="UI improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI impovements" />
   </component>
   <component name="WindowStateProjectService">
     <state x="364" y="0" key="#PHP" timestamp="1600009098267">
@@ -242,10 +220,6 @@
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="421" y="121" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.746@0.0.1366.746" timestamp="1600353088421" />
-    <state x="466" y="131" width="424" height="487" key="FileChooserDialogImpl" timestamp="1601189526017">
-      <screen x="0" y="0" width="1366" height="746" />
-    </state>
-    <state x="466" y="131" width="424" height="487" key="FileChooserDialogImpl/0.0.1366.746@0.0.1366.746" timestamp="1601189526017" />
     <state x="548" y="268" width="270" height="263" key="Github.ShareDialog" timestamp="1600003471615">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -263,28 +237,23 @@
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="535" y="286" key="VCS.ChangelistChooser/0.0.1366.746@0.0.1366.746" timestamp="1601184239734" />
-    <state x="283" y="105" key="Vcs.Push.Dialog.v2" timestamp="1601184316313">
+    <state x="283" y="105" key="Vcs.Push.Dialog.v2" timestamp="1601108701764">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="283" y="104" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1600026598641" />
-    <state x="283" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.746@0.0.1366.746" timestamp="1601184316313" />
+    <state x="283" y="105" key="Vcs.Push.Dialog.v2/0.0.1366.746@0.0.1366.746" timestamp="1601108701764" />
     <state x="491" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600181520886">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="491" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1600015866829" />
     <state x="491" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.746@0.0.1366.746" timestamp="1600181520886" />
-    <state x="590" y="0" width="592" height="746" key="find.popup" timestamp="1601196845592">
+    <state x="590" y="0" width="592" height="746" key="find.popup" timestamp="1600785326196">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
-    <state x="590" y="0" width="592" height="746" key="find.popup/0.0.1366.746@0.0.1366.746" timestamp="1601196845592" />
-    <state x="460" y="66" key="git4idea.branch.GitSmartOperationDialog" timestamp="1601198666489">
-      <screen x="0" y="0" width="1366" height="746" />
-    </state>
-    <state x="460" y="66" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.746@0.0.1366.746" timestamp="1601198666489" />
-    <state x="347" y="163" key="run.anything.popup" timestamp="1601192659681">
-      <screen x="0" y="0" width="1366" height="746" />
+    <state x="590" y="0" width="592" height="746" key="find.popup/0.0.1366.746@0.0.1366.746" timestamp="1600785326196" />
+    <state x="347" y="161" key="run.anything.popup" timestamp="1600013342397">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="347" y="161" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1600013342397" />
-    <state x="347" y="163" key="run.anything.popup/0.0.1366.746@0.0.1366.746" timestamp="1601192659681" />
   </component>
 </project>
