@@ -7,6 +7,12 @@ session_start();
     <title>Login Status</title>
     <link rel="stylesheet" href="ui.css">
 </head>
+
+<div class="topnav">
+    <img align="left" src='assets/img/zeal2.png' width=8%>
+    <img align="right" src='assets/img/VRMS.png' width=65%>
+</div>
+
 <body id="checkBody">
 <div id="check">
 <?php

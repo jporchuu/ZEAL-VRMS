@@ -4,18 +4,29 @@
     src: url('assets/fonts/ariblk.ttf') format('truetype');
 }
 
+html{
+    margin:0;
+    height:100%;
+}
+
 body{
     font-family: Arial;
     font-weight: bold;
-    margin: 0px;
+    margin:0;
+    height:100%;
 }
 
 /* login page formatting */
+
+#anim{
+    display:block;
+    width:100%; height:100%;
+    object-fit: cover;
+}
+
 #Login-Menu {
     text-align: right;
     font-family: Arial;
-    background: rgb(0,100,148);
-    background: linear-gradient(90deg, rgba(0,100,148,1) 25%, rgba(56,171,225,1) 75%, rgba(97,223,235,1) 100%);
 }
 
 #loginMenuArea{
@@ -26,6 +37,92 @@ body{
     border-radius: 25px;
     color: #424242;
     background-color: rgba(255,255,255,0.4);
+}
+
+#zealText{
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    height: 200%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 7;
+}
+
+#logintext01{
+    position: fixed;
+    z-index: 2;
+}
+#shapes02{
+    position: fixed;
+    z-index: 3;
+
+}
+#bg03{
+    position: fixed;
+    z-index: 1;
+}
+
+/*Login page grid base */
+
+.Login {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url("assets/img/gradient.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+}
+.div2 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url("assets/img/snip.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 6;
+}
+.div3 {
+    color: white;
+    background-color: #1b1b1b;
+    grid-area: 1 / 2 / 3 / 3;
+    display: inline-grid;
+    place-items: center;
+    margin: 0;
+    z-index: 7;
+}
+
+#register{
+    color: #1b1b1b;
+    background-color: #38abe1;
+}
+
+#register:hover{
+    color: #38abe1;
+    background-color: #1b1b1b;
+    border-color: #38abe1;
+}
+
+#loginTitle{
+    color: white;
+}
+
+#registerSubmit{
+    border: 3px solid #38abe1;
+    color: #38abe1;
+    background-color: #1b1b1b;
+}
+
+#registerSubmit:hover{
+    color: white;
+    background-color: #38abe1;
 }
 
 /* forms info check page formatting */
@@ -51,7 +148,7 @@ body{
 h2{
     letter-spacing: 0.1em;
     font-family: Arial-Black;
-    color: #000000;
+    color: #1b1b1b;
 }
 
 #blueLabel{
@@ -60,7 +157,7 @@ h2{
 
 h3{
     font-family: Arial-Black;
-    color: #000000;
+    color: #1b1b1b;
 }
 
 /* normal anchor hyperlink buttons */
@@ -69,7 +166,7 @@ a{
     font-weight: bold;
     padding: 10px;
     color: white;
-    background-color: #000000;
+    background-color: #1b1b1b;
     box-shadow: 0px 0px;
     transition: 0.2s;
     border-radius: 0px;
@@ -78,7 +175,7 @@ a{
 a:hover {
     -webkit-animation: shadow-drop-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: shadow-drop-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    color: #000000;
+    color: #1b1b1b;
     background-color: white;
 }
 
@@ -86,7 +183,7 @@ a:hover {
 input[type=text], input[type=password]{
     border-width:0px;
     border:none;
-    border-bottom: 3px solid #000000;
+    border-bottom: 3px solid #1b1b1b;
     padding: 10px;
     font-family: Arial;
     color: #424242;
@@ -94,19 +191,19 @@ input[type=text], input[type=password]{
 }
 
 input[type=submit]{
-    border: 2px solid #000000;
+    border: 2px solid #1b1b1b;
     font-family: Arial;
     font-weight: bold;
     font-size: 16px;
     padding: 10px 60px;
     border-radius: 0px;
-    color: #000000;
+    color: #1b1b1b;
     transition: 0.2s;
 }
 
 input[type=submit]:hover {
     color: white;
-    background-color: #000000;
+    background-color: #1b1b1b;
 }
 
 /* username/password input */
@@ -117,13 +214,15 @@ input[type=submit]:hover {
 }
 
 /* top navigation pane */
+
 .topnav {
     overflow: hidden;
     border-bottom: 2px solid #38abe1;
+    background-color: #FFFFFF ;
 }
 
 #topNavBtn{
-    color: #000000;
+    color: #1b1b1b;
     background-color: #FFFFFF ;
     float: right;
     text-align: center;
@@ -136,7 +235,7 @@ input[type=submit]:hover {
 
 #topNavBtnOUT{
     color: #FFFFFF;
-    background-color: #000000;
+    background-color: #1b1b1b;
     float: right;
     text-align: center;
     padding: 12px 14px;
@@ -147,14 +246,10 @@ input[type=submit]:hover {
 }
 
 #topNavBtnOUT:hover {
-    -webkit-animation: shadow-drop-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: shadow-drop-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     background-color: #d32f2f;
 }
 
 #topNavBtn:hover {
-    -webkit-animation: shadow-drop-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: shadow-drop-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     color: white;
     background-color: #38abe1;
 }
@@ -185,67 +280,61 @@ table th {
     color: white;
 }
 
-/*GRID*/
+/* Home page animations*/
 
-.Login {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#bg{
+    position: relative;
     height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-.div1 {
-    grid-area: 1 / 1 / 2 / 2;
-    background-image: url("assets/img/gradient.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+#text01{
+    position: fixed;
+    z-index: 3;
+    transition: 0.2s;
 }
-.div2 {
-    grid-area: 2 / 1 / 3 / 2;
-    background-image: url("assets/img/snip.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+#vrms02{
+    position: fixed;
+    z-index: 6;
+    transition: 0.2s;
+
 }
-.div3 {
-    color: white;
-    background-color: #000000;
-    grid-area: 1 / 2 / 3 / 3;
-    display: inline-grid;
-    place-items: center;
-    margin: 0;
+#car03{
+    position: fixed;
+    z-index: 4;
+    transition: 0.2s;
+}
+#bg04{
+    position: fixed;
+    z-index: 2;
+    transition: 0.2s;
 }
 
-#register{
-    color: #000000;
-    background-color: #38abe1;
+#vrms02:hover ~ #text01 {
+    transition: 0.2s;
+    z-index: 5;
 }
 
-#register:hover{
-    color: #38abe1;
-    background-color: #000000;
-    border-color: #38abe1;
+#vrms02:hover ~ #bg04 {
+    opacity: 0.5;
 }
 
-#loginTitle{
-    color: white;
-}
-
-#bot{
-    background-image: url("assets/img/bg1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
-}
-
-#registerSubmit{
-    border: 3px solid #38abe1;
-    color: #38abe1;
-    background-color: #000000;
-}
-
-#registerSubmit:hover{
-    color: white;
-    background-color: #38abe1;
+#vrms02:hover ~ #car03 {
+    opacity: 0.5;
 }
