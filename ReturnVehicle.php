@@ -1,19 +1,30 @@
+<?php session_start(); ?>
+
 <html>
 <head>
     <title>Return Vehicle</title>
     <link rel="stylesheet" href="ui.css">
 </head>
 <body>
-<div class="topnav">
-    <img src='assets/img/zeal2.png' width=10%>
-    <a id='topNavBtn' href='Login.html' class='button'>LOG-OUT</a>
-    <a id='topNavBtn' href='ReturnVehicle.php' class='button'>Return a Vehicle</a>
-    <a id='topNavBtn' href='RentVehicle.php' class='button'>Rent a Vehicle</a>
-    <a id='topNavBtn' href='VehicleList.php' class='button'>Vehicle Database</a>
-    <a id='topNavBtn' href='Menu.php' class='button'>Menu</a>
-</div>
-<center>
 <?php
+$access = $_SESSION['access'];
+echo "
+    <div class='topnav'>
+        <img src='assets/img/zeal2.png' width=8%>
+        <a id='topNavBtnOUT' href='Login.html' class='button'>LOG-OUT</a>";
+if ($access == 'Admin'){
+    echo "
+        <a id='topNavBtn' href='EditVehicle.php' class='button'>Edit Vehicle</a>
+        <a id='topNavBtn' href='DeleteVehicle.php' class='button'>Delete Vehicle</a>
+        <a id='topNavBtn' href='AddVehicle.html' class='button'>Add Vehicle</a>";
+}
+echo "
+        <a id='topNavBtn' href='ReturnVehicle.php' class='button'>Return a Vehicle</a>
+        <a id='topNavBtn' href='RentVehicle.php' class='button'>Rent a Vehicle</a>
+        <a id='topNavBtn' href='VehicleList.php' class='button'>Vehicle Database</a>
+        <a id='topNavBtn' href='Menu.php' class='button'>Menu</a>
+        </div> <center> <div id='check'>";
+
 // Verify mySQL
 $sqlConnect = mysqli_connect("localhost","root","");
 if(!$sqlConnect) {

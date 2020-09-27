@@ -9,8 +9,11 @@ session_start();
 </head>
 <body>
 <div class="topnav">
-    <img src='assets/img/zeal2.png' width=10%>
-    <a id='topNavBtn' href='Login.html' class='button'>LOG-OUT</a>
+    <img src='assets/img/zeal2.png' width=8%>
+    <a id='topNavBtnOUT' href='Login.html' class='button'>LOG-OUT</a>
+    <a id='topNavBtn' href='EditVehicle.php' class='button'>Edit Vehicle</a>
+    <a id='topNavBtn' href='DeleteVehicle.php' class='button'>Delete Vehicle</a>
+    <a id='topNavBtn' href='AddVehicle.html' class='button'>Add Vehicle</a>
     <a id='topNavBtn' href='ReturnVehicle.php' class='button'>Return a Vehicle</a>
     <a id='topNavBtn' href='RentVehicle.php' class='button'>Rent a Vehicle</a>
     <a id='topNavBtn' href='VehicleList.php' class='button'>Vehicle Database</a>
